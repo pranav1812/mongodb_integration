@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+  body
+    h1 logged in as #{userinfo}
+    .header
+      button#write
+        a(href='/write')  write blog
+    br
+    .blogs
+      h3 #{ren[ren.length-5].heading}
+      p  #{ren[ren.length-5].content}
+      br
+      br
+      h3 #{ren[ren.length-4].heading}
+      p  #{ren[ren.length-4].content}
+      br
+      br
+      h3 #{ren[ren.length-3].heading}
+      p  #{ren[ren.length-3].content}
+      br
+      br
+      h3 #{ren[ren.length-2].heading}
+      p  #{ren[ren.length-2].content}
+      br
+      br
+      h3 #{ren[ren.length-1].heading}
+      p #{ren[ren.length-1].content}
+
